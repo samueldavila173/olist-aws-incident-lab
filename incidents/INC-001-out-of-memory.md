@@ -120,16 +120,17 @@ The following improvements are planned:
 
 **Current status:** Mitigated for the 20-row laboratory dataset
 
+
 ## 10. Evidence
 
-The incident was confirmed through AWS Lambda and Amazon CloudWatch execution logs.
+### Evidence 1 — CloudWatch Failed Execution
 
-Supporting screenshots will be stored under:
+![CloudWatch failed execution](../evidence/incidents/INC-001/01-cloudwatch-failed-execution.png)
 
-`evidence/incidents/INC-001/`
+### Evidence 2 — Successful Lambda Execution
 
-Evidence should include:
+![Lambda successful execution with 20 orders](../evidence/incidents/INC-001/02-lambda-success-20-rows.png)
 
-- Failed Lambda execution
-- CloudWatch `Runtime.OutOfMemory` report
-- Successful execution using the 20-row dataset
+### Evidence 3 — Successful CloudWatch Logs
+
+![CloudWatch successful execution with 20 orders](../evidence/incidents/INC-001/03-cloudwatch-success-20-rows.png)
