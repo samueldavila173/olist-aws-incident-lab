@@ -113,10 +113,21 @@ Olist orders validation completed
 3. Application exceptions can identify the exact missing field
 4. CloudWatch logs help distinguish data quality failures from infrastructure failures
 
+
 ## 9. Evidence
 
-Screenshots documenting the failure, CloudWatch diagnosis and recovery verification will be stored in:
+### Evidence 1 — Failed Lambda Execution
 
-`evidence/incidents/INC-002/`
+![Failed Lambda execution](../evidence/incidents/INC-002/01-lambda-failed.png)
 
-The evidence will be linked here once uploaded.
+### Evidence 2 — CloudWatch Error Logs
+
+![CloudWatch validation error](../evidence/incidents/INC-002/02-cloudwatch-error.png)
+
+### Evidence 3 — Successful Recovery
+
+![Lambda recovery](../evidence/incidents/INC-002/03-lambda-recovery.png)
+
+### Evidence 4 — Recovery Logs
+
+![CloudWatch recovery](../evidence/incidents/INC-002/04-cloudwatch-recovery.png)
