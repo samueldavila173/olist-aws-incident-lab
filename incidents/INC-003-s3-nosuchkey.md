@@ -124,19 +124,22 @@ Olist orders validation completed
 
 ## 10. Evidence
 
-Evidence will be stored under:
+### Evidence 1 — Initial AccessDenied
 
-`evidence/incidents/INC-003/`
+![Lambda AccessDenied error](../evidence/incidents/INC-003/01-lambda-access-denied.png)
 
-The evidence will document:
+### Evidence 2 — Confirmed NoSuchKey
 
-- Initial `AccessDenied` response.
-- Confirmed `NoSuchKey` response.
-- CloudWatch logs.
-- Successful Lambda recovery.
+![Lambda NoSuchKey error](../evidence/incidents/INC-003/02-lambda-nosuchkey.png)
 
-## 11. Final Status
+### Evidence 3 — CloudWatch Error Investigation
 
-Application processing has been restored and verified.
+![CloudWatch error logs](../evidence/incidents/INC-003/03-cloudwatch-errors.png)
 
-The incident can be marked fully closed after confirming removal of the temporary IAM policy.
+### Evidence 4 — Successful Lambda Recovery
+
+![Lambda successful recovery](../evidence/incidents/INC-003/04-lambda-recovery.png)
+
+### Evidence 5 — CloudWatch Recovery Logs
+
+![CloudWatch recovery logs](../evidence/incidents/INC-003/05-cloudwatch-recovery.png)
